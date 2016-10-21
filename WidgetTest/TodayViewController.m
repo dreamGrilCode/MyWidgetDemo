@@ -73,7 +73,7 @@
             
             NSURLSession *session = [NSURLSession sharedSession];
             
-            NSURL *url = [NSURL URLWithString:[@"http://s1.mydical.com/v1/api.ashx?action=" stringByAppendingString:@"gettopics"]];
+            NSURL *url = [NSURL URLWithString:[@"v1/api.ashx?action=" stringByAppendingString:@"gettopics"]];
             
             NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0];
             request.HTTPBody = [[NSString stringWithFormat:@"type=data&pagesize=%i&pageindex=1",widgetCount ] dataUsingEncoding:NSUTF8StringEncoding];
